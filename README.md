@@ -87,6 +87,8 @@ src
           |__ projectEdit.jsx
           |__ SignIn.jsx
           |__ SignUp.jsx
+          |__ Home.jsx
+          |__ Landing.jsx
 |__ services/
           |__ api-config.js
           |__ study.js
