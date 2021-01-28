@@ -1,42 +1,42 @@
-# In-Sequence
+# In Sequence
 
 
 ## Overview
 
-_**Project Title** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+In Sequence is a full-stack, full-CRUD app, that utilizes a RESTful JSON API with the "React on Rails" stack. This app is a developer tool for tracking and organization. It allows users to keep track of their studies, projects, networking events, and job search. Users can create an account and have access to create, read, edit and delete to keep track of their projects, networking events, job search, and study plans.
 
 
 <br>
 
 ## MVP
 
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
-
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+- Build a Ruby on Rails server, exposing RESTful JSON endpoints
+- Build a database with 3 tables: Users, Studies, and Projects
+- Utilize Rails to define models (user, study, project) for interacting with the database
+- Implement working generic controller actions for Full CRUD (index, show, create, update, delete) between Studies and projects tables
+- Create 8 separate, rendered components: studyCreate, studyDetail, studyEdit, Study, projectCreate, projectDetail, and project
+- Render data from Ruby on Rails API in components
+- Demonstrate Full CRUD actions ( index, show, create, update, and delete ) on the front end.
+- Style layout with flexbox and grid
+- Basic CSS styling 
+- Implement 2 media queries for responsive design on desktop, mobile, and ipad.
 
 <br>
 
 ### Goals
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- Create a useful organization/tracking tool for developers
+- Create a creative and easy to navigate application that incorporates modern UI themes
+- Demonstrate understanding of (and ability to use) Ruby on Rails, RESTful JSON API, Javascript, and React
 
 <br>
 
 ### Libraries and Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+|   Material UI    | React components library for buttons, icons, menus, text fields and more|
 
 <br>
 
@@ -44,71 +44,78 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
-![Dummy Link](url)
+https://xd.adobe.com/view/ab7adf9b-b61d-4516-820a-efe6385f4f00-fe29/?fullscreen
 
-- Desktop Landing
+- Desktop Wireframes
 
-![Dummy Link](url)
 
-- Desktop Hero
+https://xd.adobe.com/view/f60e229f-378a-4184-af19-87b70e57e3bd-a35d/
 
-![Dummy Link](url)
+- Mobile Wireframes
 
-- Resource Index
 
-![Dummy Link](url)
+https://xd.adobe.com/view/a38d8eb6-4d06-40e1-9917-0ef3cd68fadc-f6de/
 
-- Resource Show
+- Ipad Wireframes
 
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
 
 #### Component Tree
 
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. 
+https://whimsical.com/in-sequence-component-tree-52MAGyYYw5pvgoPXtzfdQw
 
 #### Component Hierarchy
 
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
 
 ``` structure
 
 src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
 |__ components/
-      |__ Header.jsx
+      |__ Layout
+      |__ images
+|__ Maincontainer/
+      |__ StudyContainer.jsx
+      |__ ProjectContainer.jsx
+|__ screens/
+          |__ Study.jsx
+          |__ StudyCreate.jsx
+          |__ StudyDetail.jsx
+          |__ StudyEdit.jsx
+          |__ Project.jsx
+          |__ ProjectCreate.jsx
+          |__ ProjectDetail.jsx
+          |__ projectEdit.jsx
+          |__ SignIn.jsx
+          |__ SignUp.jsx
 |__ services/
-
+          |__ api-config.js
+          |__ study.js
+          |__ project.js
 ```
 
-#### Component Tree
-
-> Use this section to include a link to your component tree.
-
-[Component tree](url)
 
 #### Time Estimates
 
-> Use this section to estimate the time necessary to build out each of the components you've described above.
 
-| Task                | Priority | Estimated Time | Time Invested | Actual Time |
-| ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| Task                     | Priority | Estimated Time | Time Invested | Actual Time |
+| -------------------      | :------: | :------------: | :-----------: | :---------: |
+| Create Database Tables   |    H     |     1 hrs      |     -----     |    -----    |
+| Create Models            |    H     |     1 hrs      |     -----     |    -----    |
+| Crontroller CRUD Actions |    H     |     3 hrs      |     -----     |    -----    |
+| Create React Components  |    H     |     3 hrs      |     -----     |    -----    |
+| Render data in components|    H     |     3 hrs      |     -----     |    -----    |
+| Full CRUD in Components  |    H     |     3 hrs      |     -----     |    -----    |
+| Layout Styling           |    M     |     2 hrs      |     -----     |    -----    |
+| Basic CSS Styling        |    M     |     2 hrs      |     -----     |    -----    |
+| Media Queries / 3 screens|    H     |     2 hrs      |     -----     |    -----    |
+| Modern UI themes         |    L     |     2 hrs      |     -----     |    -----    |
+| Advanced CSS Styling     |    L     |     3 hrs      |     -----     |    -----    |
+| Network & Job Tables     |    M     |     1 hrs      |     -----     |    -----    |
+| Network & Job Models     |    M     |     1 hrs      |     -----     |    -----    |
+| Network & Job Controllers|    M     |     3 hrs      |     -----     |    -----    |
+| Network & Job Components |    M     |     3 hrs      |     -----     |    -----    |
+| TOTAL                    |          |     33 hrs     |     -----     |    -----    |
 
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
 <br>
 
@@ -116,7 +123,7 @@ src
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
+> https://drive.google.com/file/d/1bVg9fy30k1qBXlmqIZvDA7llB8KVMChH/view?usp=sharing
 
 <br>
 
@@ -124,14 +131,19 @@ src
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+- Incorporate modern UI themes
+- Add advanced CSS and animations
+- Create "Network" and "Job-Search" tables 
+- Network and Job Search Models
+- Network and Job Search Controllers with create, read and delete capabilities
+- Create Network and JobSearch components with create, read and delete capabilities on the front end 
 
 ***
 
 ## Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+> To be completed later 
 
 ## Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution.
+> To be completed later
