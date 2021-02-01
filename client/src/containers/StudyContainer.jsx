@@ -62,7 +62,7 @@ export default function StudyContainer(props) {
       <Route path='/studies'>
         <Study
           studies={studies}
-          // currentUser={currentUser}
+          currentUser={currentUser}
         />
       </Route>
     </Switch>
