@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import StudyCard from '../../components/StudyCard';
-// import Layout from '../../layouts/Layout';
+import Layout from '../../layouts/Layout';
 
 export default function Studies(props) {
   const { studies } = props;
@@ -23,7 +23,7 @@ export default function Studies(props) {
         ))}
       </div>
       <Link to="/studies/new"><button>Add Study</button></Link>
-      </div>
-    // </Layout>
+    </div>
+    /* </Layout> */
   )
 }
