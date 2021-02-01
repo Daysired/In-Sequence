@@ -1,11 +1,11 @@
 import React from 'react';
 
 export default function StudyCard(props) {
-  const { title, image, description, documentation} = props;
+  const { image, title, description, documentation} = props;
   return (
-      <div className="card">
-        <h3>{title}</h3>
-        <img src={image} alt={title} />
+      <div className="study-card">
+      <img src={image} alt={title} />
+      <h4>{title}</h4>
         <p>{description}</p>
         <p>{documentation}</p>
         

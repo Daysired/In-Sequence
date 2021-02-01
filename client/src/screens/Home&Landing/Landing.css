@@ -11,15 +11,17 @@ body {
 label {
   color: white;
 }
-/* body {
+body {
   background-color: #8E4DE3;
 }
-.card > img {
+.study-card > img {
   border: 1px solid black;
-  border-radius: 50%;
-  max-width: 200px;
+  /* border-radius: 50%; */
+  max-width: 150px;
   width: 100%;
 }
+
+
 .card-list {
   display: grid;
   grid-gap: 30px;
@@ -27,4 +29,4 @@ label {
   margin: 60px;
   color: white;
 
-} */
+}
