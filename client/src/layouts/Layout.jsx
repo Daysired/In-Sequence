@@ -7,7 +7,7 @@ export default function Layout(props) {
   return (
     <div>
       <header>
-        <h1>In Sequence</h1>
+        {/* <h1>In Sequence</h1> */}
         {currentUser ? (
           <>
             <p>Welcome, {currentUser.username}</p>
