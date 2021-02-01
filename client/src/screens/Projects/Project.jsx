@@ -9,7 +9,7 @@ export default function Projects(props) {
     // <Layout>
     <div>
       <div className="card-list">
-        {studies.map(project => (
+        {projects.map(project => (
           <React.Fragment key={project.id}>
             <Link to={`/projects/${project.id}`}>
               <ProjectCard
