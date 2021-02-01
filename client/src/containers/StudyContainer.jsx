@@ -25,43 +25,43 @@ export default function StudyContainer(props) {
     history.push('/studies')
   }
 
-  const handleUpdate = async (id, projectData) => {
-    const updatedProject = await putProject(id, projectData);
-    setProjects(prevState => prevState.map(projectItem => {
-      return projectItem.id === Number(id) ? updatedProject : projectItem
+  const handleUpdate = async (id, studyData) => {
+    const updatedStudy = await putStudy(id, studyData);
+    setStudies(prevState => prevState.map(studyItem => {
+      return studyItem.id === Number(id) ? updatedStudy : studyItem
     }))
-    history.push('/projects')
+    history.push('/studies')
   }
 
   const handleDelete = async (id) => {
-    await deleteProject(id);
-    setProjects(prevState => prevState.filter(projectItem => {
-      return projectItem.id !== id
+    await deleteStudy(id);
+    setStudies(prevState => prevState.filter(studyItem => {
+      return studyItem.id !== id
     }))
   }
 
   return (
     <Switch>
-       <Route path='/projects/new'>
-        <ProjectCreate
+       <Route path='/studies/new'>
+        <StudyCreate
           handleCreate={handleCreate}
         />
       </Route>
-      <Route path='/projects/:id/edit'>
-        <ProjectEdit
-          projects={projects}
+      <Route path='/studies/:id/edit'>
+        <StudyEdit
+          studies={studies}
           handleUpdate={handleUpdate}
         />
       </Route>
-      <Route path='/projects/:id'>
-        <ProjectDetail
-         projects={projects}
+      <Route path='/studies/:id'>
+        <StudyDetail
+         studies={studies}
          handleDelete={handleDelete}
         />
       </Route>
-      <Route path='/projects'>
-        <Project
-          projects={projects}
+      <Route path='/studies'>
+        <Study
+          studies={studies}
           currentUser={currentUser}
         />
       </Route>
