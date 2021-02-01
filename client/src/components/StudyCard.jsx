@@ -1,13 +1,13 @@
 import React from 'react';
 
 export default function StudyCard(props) {
-  const { topic, logo_url, description, documentation_url} = props;
+  const { title, image, description, documentation} = props;
   return (
       <div className="card">
-        <h3>{topic}</h3>
-        <img src={logo_url} alt={topic} />
+        <h3>{title}</h3>
+        <img src={image} alt={title} />
         <p>{description}</p>
-        <p>{documentation_url}</p>
+        <p>{documentation}</p>
         
       </div>
   )
