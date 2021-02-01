@@ -6,7 +6,7 @@ import ProjectDetail from "../screens/Projects/ProjectDetail";
 import Project from "../screens/Projects/Project";
 import { deleteProject, getAllProjects, postProject, putProject } from '../services/project';
 
-export default function MainContainer(props) {
+export default function ProjectContainer(props) {
   const [projects, setProjects] = useState([]);
   const history = useHistory();
   const { currentUser } = props;

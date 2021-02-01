@@ -56,7 +56,7 @@ function App() {
             currentUser={currentUser}
           />
         </Route>
-        <Route path="/study">
+        <Route path="/studies">
           <StudyContainer
             currentUser={currentUser}
           />
