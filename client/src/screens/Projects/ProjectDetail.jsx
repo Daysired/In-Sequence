@@ -19,7 +19,7 @@ export default function ProjectDetail(props) {
     <Layout>
       <div className="project-details">
         {
-          study &&
+          project &&
           <div className="project-card">
             <h3>{project.name}</h3>
             <img src={project.img_url} alt={project.name} />
