@@ -7,7 +7,7 @@ import SignIn from "./screens/SignIn&SignUp/SignIn";
 import SignUp from "./screens/SignIn&SignUp/SignUp";
 import Home from "./screens/Home&Landing/Home";
 import Landing from "./screens/Home&Landing/Landing";
-import { loginUser, SignupUser, verifyUser, removeToken } from "./services/auth";
+import { loginUser, signupUser, verifyUser, removeToken } from "./services/auth";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
