@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 
 export default function Layout(props) {
-  const { currentUser, handleSignOut } = props;
+  const { currentUser, handleLogout } = props;
   return (
     <div>
       <header>
@@ -11,7 +11,7 @@ export default function Layout(props) {
         {currentUser ? (
           <>
             <p>Welcome, {currentUser.username}</p>
-            <button onClick={handleSignOut}>Sign Out</button>
+            <button onClick={handleLogout}>Sign Out</button>
           </>
         ) : (
             <Link to='/login'>Sign In/Sign Up</Link> 
