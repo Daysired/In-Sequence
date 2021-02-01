@@ -23,7 +23,7 @@ export default function SignIn(props) {
       handleLogin(formData);
     }}>
       <h3>Sign In</h3>
-      <label>Username:
+      <label className="signin-label">Username:
         <input
           type='text'
           name='username'
