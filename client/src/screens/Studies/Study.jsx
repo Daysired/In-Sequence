@@ -11,13 +11,13 @@ export default function Studies(props) {
       <div className="card-list">
         {studies.map(study => (
           <React.Fragment key={study.id}>
-            <Link to={`/studies/${study.id}`}>
-              <StudyCard
-                title={study.topic}
+            <Link to={`/studies/${study.id}`}><p>{study.topic}</p>
+              {/* <StudyCard */}
+                {/* title={study.topic}
                 image={study.logo_url}
                 description={study.description}
-                documentation={study.documentation_url}
-              />
+                documentation={study.documentation_url} */}
+              {/* /> */}
             </Link>
           </React.Fragment>
         ))}

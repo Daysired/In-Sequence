@@ -17,7 +17,7 @@ export default function ProjectEdit(props) {
 
   useEffect(() => {
     const prefillFormData = () => {
-      const oneProject = projects.find(project => {
+      const oneProject = projects.find((project) => {
         return project.id === Number(id);
       })
       const { name, img_url, description, deployed_url, stack } = oneProject;

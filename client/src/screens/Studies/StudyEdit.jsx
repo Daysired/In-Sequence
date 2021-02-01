@@ -16,7 +16,7 @@ export default function StudyEdit(props) {
 
   useEffect(() => {
     const prefillFormData = () => {
-      const oneStudy = studies.find(study => {
+      const oneStudy = studies.find((study) => {
         return study.id === Number(id);
       })
       const { topic, logo_url, description, documentation_url } = oneStudy;

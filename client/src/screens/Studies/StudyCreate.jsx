@@ -38,7 +38,7 @@ export default function StudyCreate(props) {
           <label>Logo Url:
             <input
               type="text"
-              name="log_url"
+              name="logo_url"
               value={logo_url}
               onChange={handleChange}
             />
