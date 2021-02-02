@@ -1,6 +1,8 @@
 .signin-link {
   color: white;
   align-self: right;
+  padding-top: 0;
+  margin: 0;
 }
 
 .studies-link {

@@ -3,21 +3,29 @@
   height: 100vh;
 }
 
-/* body {
-  background-color: #8E4DE3;
-} */
-
 .study-card > img {
-  border: 1px solid black;
-  max-width: 150px;
+  max-width: 80px;
   width: 100%;
+  margin-left: 27%;
+  margin-top: 10%;
 }
+
+.study-card {
+  height: 25vh;
+  width: 15vw;
+  margin-top: 12%;
+  background: black;
+  color: white; 
+  border-radius: 15px;
+}
+
+.topic {
+
+}
+
 
 .card-list {
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
-  margin: 60px;
-  color: white;
-
 }

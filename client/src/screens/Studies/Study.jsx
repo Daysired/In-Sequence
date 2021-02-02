@@ -8,6 +8,7 @@ export default function Studies(props) {
   const { studies, currentUser } = props;
   return (
     <div className="background-p">
+      <div className="studycard-container">
       <div className="card-list">
         {studies.map(study => (
           <React.Fragment key={study.id}>
@@ -19,6 +20,7 @@ export default function Studies(props) {
             </Link>
           </React.Fragment>
         ))}
+          </div>
       </div>
       {currentUser &&
         <Link to="/studies/new"><button>Add Study</button></Link>  

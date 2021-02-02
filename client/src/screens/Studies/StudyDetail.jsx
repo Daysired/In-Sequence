@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom'
 import './StudyDetail.css';
 
-import Layout from '../../layouts/Layout';
+// import Layout from '../../layouts/Layout';
 
 export default function StudyDetail(props) {
   const [study, setStudy] = useState(null);
@@ -17,7 +17,7 @@ export default function StudyDetail(props) {
   }, [studies, id])
 
   return (
-    <Layout>
+    // <Layout>
       <div className="study-details">
         {
           study &&
@@ -33,6 +33,6 @@ export default function StudyDetail(props) {
           </div>
         }
       </div>
-    </Layout>
+   
   )
 }
