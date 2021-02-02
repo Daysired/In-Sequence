@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Layout from '../../layouts/Layout';
+import '.ProjectCreate.css';
 
 export default function ProjectCreate(props) {
   const [formData, setFormData] = useState({

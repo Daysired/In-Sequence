@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Layout from '../../layouts/Layout';
+import './ProjectEdit.css';
 
 export default function ProjectEdit(props) {
   const [formData, setFormData] = useState({
