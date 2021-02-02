@@ -7,7 +7,6 @@ export default function Layout(props) {
   return (
     <div>
       <header>
-        {/* <h1>In Sequence</h1> */}
         {currentUser ? (
           <>
             <p>Welcome, {currentUser.username}</p>
@@ -17,7 +16,7 @@ export default function Layout(props) {
             <Link to='/login'>Sign In/Sign Up</Link> 
         )}
       </header>
-      <hr />
+      {/* <hr /> */}
       {currentUser && (
         <>
           <Link to='/studies'>Study</Link>

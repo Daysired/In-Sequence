@@ -21,7 +21,7 @@ export default function StudyCreate(props) {
   }
 
   return (
-    <Layout>
+    <Layout currentUser={props.currentUser}>
       <div className="form-container">
         <form onSubmit={(e) => {
           e.preventDefault()
@@ -55,7 +55,7 @@ export default function StudyCreate(props) {
           <label>Documentation:
             <input
               type="text"
-              name="documentation"
+              name="documentation_url"
               value={documentation_url}
               onChange={handleChange}
             />

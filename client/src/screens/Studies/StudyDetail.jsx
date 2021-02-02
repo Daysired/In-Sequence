@@ -6,7 +6,7 @@ import Layout from '../../layouts/Layout';
 
 export default function StudyDetail(props) {
   const [study, setStudy] = useState(null);
-  const { studies, handleDelete } = props;
+  const { studies, handleDelete, currentUser } = props;
   const { id } = useParams();
 
   useEffect(() => {
@@ -26,8 +26,10 @@ export default function StudyDetail(props) {
             <img src={study.logo_url} alt={study.topic} />
             <p>{study.description}</p>
             <p>{study.documentation_url}</p>
-            <Link to={`/studies/${study.id}/edit`}><button>Edit</button></Link>
-            <button onClick={() => handleDelete(study.id)}>Delete</button>
+            {currentUser && 
+            <Link to={`/studies/${study.id}/edit`}><button>Edit</button></Link>} 
+            {currentUser &&
+              <button onClick={() => handleDelete(study.id)}>Delete</button>}
           </div>
         }
       </div>

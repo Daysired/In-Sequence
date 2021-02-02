@@ -1,8 +1,10 @@
 import Layout from "./layouts/Layout";
 import { useEffect, useState } from "react";
-import { Route, Switch, useHistory } from "react-router-dom";
+import { Route, Switch, useHistory, Redirect } from "react-router-dom";
 import ProjectContainer from "./containers/ProjectContainer";
 import StudyContainer from "./containers/StudyContainer";
+import StudyCreate from "./screens/Studies/StudyCreate";
+import StudyEdit from "./screens/Studies/StudyEdit";
 import SignIn from "./screens/SignIn&SignUp/SignIn";
 import SignUp from "./screens/SignIn&SignUp/SignUp";
 import Home from "./screens/Home&Landing/Home";
@@ -16,7 +18,7 @@ function App() {
   useEffect(() => {
     const handleVerify = async () => {
       const userData = await verifyUser();
-      setCurrentUser(userData);
+      setCurrentUser(userData)
     }
     handleVerify();
   }, []);

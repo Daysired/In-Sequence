@@ -1,14 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import {Redirect} from "react-router-dom";
 import StudyCard from '../../components/StudyCard';
 import './Study.css';
 
 
 export default function Studies(props) {
-  const { studies } = props;
+  const { studies, currentUser } = props;
   return (
    
-    <div>
+    <div className="background-p">
       <div className="card-list">
         {studies.map(study => (
           <React.Fragment key={study.id}>
@@ -21,7 +22,9 @@ export default function Studies(props) {
           </React.Fragment>
         ))}
       </div>
-      <Link to="/studies/new"><button>Add Study</button></Link>
+      {currentUser &&
+        <Link to="/studies/new"><button>Add Study</button></Link>  
+      }
     </div>
     
   )
