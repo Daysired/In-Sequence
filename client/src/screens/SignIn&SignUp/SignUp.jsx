@@ -19,11 +19,13 @@ export default function SignUp(props) {
   }
 
   return (
+    <div className="signup-container">
+    <div className="signup-form">
     <form onSubmit={(e)=> {
       e.preventDefault();
       handleSignup(formData);
     }}>
-      <h3>Sign Up</h3>
+      <h3 className="h-signup">Sign Up</h3>
       <label>Username:
         <input
           type='text'
@@ -51,7 +53,9 @@ export default function SignUp(props) {
         />
       </label>
       <br />
-      <input type="submit" value="Submit"/>
-    </form>
+      <input className="signup-btn" type="submit" value="Submit"/>
+        </form>
+      </div>
+      </div>
   )
 }
