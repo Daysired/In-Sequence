@@ -1,0 +1,23 @@
+.signin-link {
+  color: white;
+  align-self: right;
+}
+
+.studies-link {
+  color: white;
+}
+
+.projects-link {
+  color: white;
+}
+
+.signout-link{
+  color: white;
+}
+
+.user-greeting {
+  color: white;
+  padding-top: 0;
+  margin: 0;
+}
+ 

@@ -4,7 +4,7 @@ import './Landing.css';
 export default function Landing() {
   return (
     <>
-      <div>
+      <div className="title">
         <p className="heading">The Ultimate Developer Tool.</p>
         <p className="heading2">Plan Better. Stay Organized.</p>
       <div className="carousel-container">

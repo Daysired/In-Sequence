@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {Redirect} from "react-router-dom";
 import StudyCard from '../../components/StudyCard';
 import './Study.css';
 
@@ -8,7 +7,6 @@ import './Study.css';
 export default function Studies(props) {
   const { studies, currentUser } = props;
   return (
-   
     <div className="background-p">
       <div className="card-list">
         {studies.map(study => (
@@ -25,7 +23,7 @@ export default function Studies(props) {
       {currentUser &&
         <Link to="/studies/new"><button>Add Study</button></Link>  
       }
-    </div>
+      </div>
     
   )
 }
