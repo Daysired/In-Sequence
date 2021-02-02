@@ -1,8 +1,12 @@
 h3 {
-  color: pink;
+  color: white;
    text-align: center;
  }
 
 body {
   background-color: #8E4DE3;
+}
+
+label {
+  color:white;
 }
