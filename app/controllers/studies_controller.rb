@@ -1,5 +1,6 @@
 class StudiesController < ApplicationController
   before_action :set_study, only: [:show, :update, :destroy]
+  before_action :authorize_request, only: [:update, :create, :destroy]
 
   # GET /studies
   def index
@@ -16,6 +17,7 @@ class StudiesController < ApplicationController
   # POST /studies
   def create
     @study = Study.new(study_params)
+    @study.user = @current_user
 
     if @study.save
       render json: @study, status: :created, location: @study
