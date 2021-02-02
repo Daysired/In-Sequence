@@ -1,15 +1,4 @@
-body {
-  background-color: #8E4DE3;
-}
-
-
-label {
-  color: white;
-}
-/* body {
-  background-color: #8E4DE3;
-} */
-.study-card > img {
+.project-card > img {
   border: 1px solid black;
   /* border-radius: 50%; */
   max-width: 150px;

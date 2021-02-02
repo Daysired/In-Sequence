@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import StudyCard from '../../components/StudyCard';
+import './Study.css';
 
 
 export default function Studies(props) {

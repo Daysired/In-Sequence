@@ -1,12 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ProjectCard from '../../components/ProjectCard';
-import Layout from '../../layouts/Layout';
+import './Project.css';
 
 export default function Projects(props) {
   const { projects } = props;
   return (
-    // <Layout>
     <div>
       <div className="card-list">
         {projects.map(project => (
@@ -25,6 +24,5 @@ export default function Projects(props) {
       </div>
       <Link to="/projects/new"><button>Add Project</button></Link>
     </div>
-    /* </Layout> */
   )
 }
