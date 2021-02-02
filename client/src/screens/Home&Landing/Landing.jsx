@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Landing.css';
 
 export default function Landing() {
@@ -21,7 +22,7 @@ export default function Landing() {
             </h4>
         </div>
         <p className="get-organized">Get Organized</p>
-        <p className="arrow">>>></p>
+        <Link className="arrow" to="/home">>>></Link>
         </div>
     </>
   )

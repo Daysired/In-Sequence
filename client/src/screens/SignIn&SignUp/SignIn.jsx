@@ -19,6 +19,8 @@ export default function SignIn(props) {
   }
 
   return (
+    <div className="signin-container">
+    <div className="form-container">
     <form onSubmit={(e)=> {
       e.preventDefault();
       handleLogin(formData);
@@ -42,8 +44,11 @@ export default function SignIn(props) {
         />
       </label>
       <br />
-      <Link to='/signup'>Sign Up</Link>
+      <Link className="signup-link" to='/signup'>Or Sign Up</Link>
       <button>Submit</button>
-    </form>
+      </form>
+      </div>
+      </div>
+    
   )
 }

@@ -63,11 +63,11 @@ function App() {
             currentUser={currentUser}
           />
         </Route>
-        {/* <Route path="/home">
+        <Route path="/home">
           <Home
             currentUser={currentUser}
           />
-        </Route> */}
+        </Route> 
         <Route path='/' component={Landing} />
       </Switch>
 

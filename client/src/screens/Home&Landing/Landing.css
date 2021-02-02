@@ -32,7 +32,7 @@ body {
   color: #8E4DE3 ;
   text-emphasis: bold;
   font-size: 50px;
-  text-align: center;
+  align-self: center;
   margin-top: 10px;
   background: none;
 

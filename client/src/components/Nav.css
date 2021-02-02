@@ -9,21 +9,6 @@
   background-color: #0b2512;
 }
 
-.store-name {
-  /* font-family: "Amatic Sc", cursive; */
-  text-align: center;
-  font-weight: bold;
-  font-size: 34px;
-  color: white;
-  letter-spacing: -3px;
-  flex: 1;
-  max-width: 30vw;
-}
-
-.store-name:hover {
-  transform: scale(1.004);
-}
-
 .links {
   flex: 2;
   width: 60vw;
@@ -34,7 +19,6 @@
 
 .link {
   flex: 1;
-  /* font-family: "Josefin Slab", serif; */
   font-weight: bold;
   color: white;
   font-size: 20px;
@@ -50,98 +34,3 @@ a {
   text-decoration: none;
   color: black;
 }
-/* 
-@media only screen and (max-device-width: 280px){
-  .store-name {
-    max-width: 100%;
-    font-size: 20px;
-    letter-spacing: -1.5px;
-  }
-    .link-welcome {
-      font-size: 10px;
-    }
-    .nav {
-      height: 25px;
-    }
-    .links {
-      font-size: 10px;
-    }
-    .link {
-      font-size: 10px;
-      margin-right: 4%;
-      margin-left: 3%;
-    }
-}
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
- .store-name {
-  max-width: 100%;
-  font-size: 20px;
-  letter-spacing: -1.5px;
-}
-  .link-welcome {
-    font-size: 11px;
-  }
-  .nav {
-    height: 15px;
-  }
-  .links {
-    width: 100vw;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-right: 2%;
-  }
-  .link {
-    font-size: 11px;
-  }
-}
-
-@media only screen and (min-device-width : 540px){
-  .store-name {
-    font-size: 30px;
-    letter-spacing: -1.5px;
-    margin-right: 2%;
-  }
-    .link-welcome {
-      font-size: 15px;
-    }
-    .nav {
-      height: 25px;
-    }
-  
-    .link {
-      font-size: 15px;
-    }
-}
-
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  .store-name {
-    font-size: 40px;
-  }
-    .link-welcome {
-      font-size: 15px;
-    }
-    .nav {
-      height: 30px;
-    }
-    .link {
-      font-size: 15px;
-    }
-}
-
-@media only screen  and (min-width : 1224px) {
-  .store-name {
-    font-size: 45px;
-  }
-    .link-welcome {
-      font-size: 18px;
-    }
-    .nav {
-      height: 35px;
-    }
-    
-    .link {
-      font-size: 18px;
-    }
-} */
