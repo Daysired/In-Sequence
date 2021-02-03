@@ -20,12 +20,12 @@ export default function StudyCreate(props) {
   }
 
   return (
-      <div className="form-container">
+      <div className="create-container">
         <form onSubmit={(e) => {
           e.preventDefault()
           handleCreate(formData);
         }}>
-          <h3>Create Study</h3>
+          <h3 className="st-create-h3">Create Study Plan</h3>
           <label>Topic:
             <input
               type="text"
