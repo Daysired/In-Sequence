@@ -37,12 +37,12 @@ export default function StudyEdit(props) {
   }
 
   return (
-      <div className="form-container">
+      <div className="edit-container">
         <form onSubmit={(e) => {
           e.preventDefault()
           handleUpdate(id, formData);
         }}>
-          <h3>Edit Study Plan</h3>
+          <h3 className="st-edit-h3">Edit Study Plan</h3>
           <label>Topic:
             <input
               type="text"
