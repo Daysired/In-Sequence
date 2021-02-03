@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useParams } from 'react-router-dom'
+import { Link, useParams} from 'react-router-dom'
 import './StudyDetail.css';
 
 export default function StudyDetail(props) {
   const [study, setStudy] = useState(null);
-  const { studies, handleDelete, currentUser } = props;
+  const { studies, handleDelete} = props;
   const { id } = useParams();
 
   useEffect(() => {
@@ -15,21 +15,21 @@ export default function StudyDetail(props) {
   }, [studies, id])
 
   return (
-      <div className="study-details">
-        {
-          study &&
-          <div className="study-card">
-            <h3>{study.topic}</h3>
-            <img src={study.logo_url} alt={study.topic} />
-            <p>{study.description}</p>
-            <p>{study.documentation_url}</p>
-            {currentUser && 
-            <Link to={`/studies/${study.id}/edit`}><button>Edit</button></Link>} 
-            {currentUser &&
-              <button onClick={() => handleDelete(study.id)}>Delete</button>}
-          </div>
-        }
-      </div>
-   
+    <div className="study-details">
+      {
+        study &&
+        <div className="detail-card">
+          <img className="detail-img" src={study.logo_url} alt={study.topic} />
+          <h3 className="st-topic">{study.topic}</h3>
+          <p className="st-description">Description: {study.description}</p>
+          <p className="st-doc">Documentation: {study.documentation_url}</p>
+          <Link to={`/studies/${study.id}/edit`}><button className="detail-edit">Edit</button></Link>
+          <button className="detail-delete" onClick={() => handleDelete(study.id)}>Delete</button>
+          
+        </div>
+      }
+    </div>   
+      
+        
   )
 }

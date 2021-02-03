@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Switch, Route, useHistory } from "react-router-dom";
+import { Switch, Route, useHistory, Redirect } from "react-router-dom";
 import StudyCreate from "../screens/Studies/StudyCreate";
 import StudyEdit from "../screens/Studies/StudyEdit";
 import StudyDetail from "../screens/Studies/StudyDetail";
@@ -48,16 +48,18 @@ export default function StudyContainer(props) {
         />
       </Route>
       <Route path='/studies/:id/edit'>
-        <StudyEdit
+        {currentUser ? <StudyEdit
+          currentUser={currentUser}
           studies={studies}
           handleUpdate={handleUpdate}
-        />
+        /> : <Redirect to="/login" />}
       </Route>
       <Route path='/studies/:id'>
-        <StudyDetail
-         studies={studies}
-         handleDelete={handleDelete}
-        />
+        {currentUser ? <StudyDetail
+          currentUser={currentUser}
+          studies={studies}
+          handleDelete={handleDelete}
+        /> : <Redirect to="/login" />}
       </Route>
       <Route path='/studies'>
         <Study

@@ -1,8 +1,57 @@
-.study-details {
-  background-color: #8E4DE3;
-  height: 100vh;
+.detail-card {
+  height: 63vh;
+  width: 35vw;
+  margin-left: 35%;
+  background: #8E4DE3;
+  color: white; 
+  border-radius: 15px;
+  margin-top: 10%;
 }
 
-/* body {
-  background-color: #8E4DE3;
-} */
+.detail-img {
+  max-width: 120px;
+  width: 100%;
+  height: 120px;
+  margin-left: 2%;
+  margin-top: 10%;
+}
+
+.st-topic {
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 18px;
+  margin-bottom: 8%;
+}
+
+.st-description {
+  color: #FFD000;
+  font-size: 15px;
+}
+
+.st-doc {
+  color: #FFD000;
+  font-size: 15px;
+}
+
+.detail-edit{
+  width: 15%;
+  height: 30px;
+  margin: 1em auto;
+  background: black;
+  border-radius: 10px;
+  color: #FFD000;
+  margin-top: 3%;
+  margin-right: 2%;
+}
+
+.detail-delete{
+  width: 15%;
+  height: 30px;
+  margin: 1em auto;
+  background: black;
+  border-radius: 10px;
+  color: #FFD000;
+  margin-top: 3%;
+  margin-left: 2%;
+}

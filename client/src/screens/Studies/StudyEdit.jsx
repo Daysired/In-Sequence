@@ -42,7 +42,7 @@ export default function StudyEdit(props) {
           e.preventDefault()
           handleUpdate(id, formData);
         }}>
-          <h3>Edit Study</h3>
+          <h3>Edit Study Plan</h3>
           <label>Topic:
             <input
               type="text"
@@ -75,7 +75,7 @@ export default function StudyEdit(props) {
               onChange={handleChange}
             />
           </label>
-          <button>Submit</button>
+          <button className="st-edit-btn">Submit</button>
         </form>
       </div>
   )
