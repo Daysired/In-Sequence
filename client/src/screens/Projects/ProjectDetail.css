@@ -1,0 +1,63 @@
+.pr-detail-card {
+  height: 60vh;
+  width: 27vw;
+  margin-left: 35%;
+  background: #8E4DE3;
+  color: white; 
+  border-radius: 15px;
+  margin-top: 8%;
+  border: 5px solid#FFD000;
+}
+
+.pr-detail-img {
+  max-width: 145px;
+  width: 100%;
+  height: 130px;
+  margin-left: 2%;
+  margin-top: 10%;
+}
+
+.pr-name {
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 18px;
+  margin-bottom: 8%;
+}
+
+.pr-description {
+  color: #FFD000;
+  font-size: 15px;
+}
+
+.pr-deployed {
+  color: #FFD000;
+  font-size: 15px;
+}
+
+.pr-stack {
+  color: #FFD000;
+  font-size: 15px;
+}
+
+.pr-detail-edit {
+  width: 15%;
+  height: 30px;
+  margin: 1em auto;
+  background: black;
+  border-radius: 10px;
+  color: #FFD000;
+  margin-top: 3%;
+  margin-right: 2%;
+}
+
+.pr-detail-delete {
+  width: 15%;
+  height: 30px;
+  margin: 1em auto;
+  background: black;
+  border-radius: 10px;
+  color: #FFD000;
+  margin-top: 3%;
+  margin-left: 2%;
+}
