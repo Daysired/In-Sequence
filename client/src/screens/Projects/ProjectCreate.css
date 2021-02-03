@@ -1,0 +1,43 @@
+.pr-create-container {
+  align-self: center;
+  padding: 1em;
+  width: 410px;
+  height: 490px;
+  margin: 4em auto;
+  margin-top: 9%;
+  border: 5px solid #8E4DE3;
+}
+
+.pr-create-h3 {
+  color: #FFD000;
+  text-align: center;
+  margin-bottom: 12%;
+}
+
+.pr-create-container form {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 80%;
+  align-items: center;
+}
+
+.pr-create-container form input {
+  width: 250px;
+  height: 90%vh;;
+  padding: 0.3em 1em;
+  font-size: 1rem;
+  border-radius: 3px;
+  margin: 10px
+}
+
+.pr-create-container form button {
+  width: 20%;
+  height: 25px;
+  margin: 1em auto;
+  background: #FFD000;
+  border-radius: 10px;
+  color: black;
+  margin-top: 5%;
+}

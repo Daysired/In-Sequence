@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Layout from '../../layouts/Layout';
 import './ProjectCreate.css';
 
 export default function ProjectCreate(props) {
@@ -22,13 +21,12 @@ export default function ProjectCreate(props) {
   }
 
   return (
-    <Layout>
-      <div className="form-container">
+      <div className="pr-create-container">
         <form onSubmit={(e) => {
           e.preventDefault()
           handleCreate(formData);
         }}>
-          <h3>Create Project</h3>
+          <h3 className="pr-create-h3">Create Project</h3>
           <label>Name:
             <input
               type="text"
@@ -72,6 +70,5 @@ export default function ProjectCreate(props) {
           <button>Submit</button>
         </form>
       </div>
-    </Layout>
   )
 }
