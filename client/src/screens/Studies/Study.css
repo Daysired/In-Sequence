@@ -42,11 +42,14 @@
 
 
 .add-btn {
-  width: 30%;
-  height: 25px;
+  width: 9%;
+  height: 35px;
   margin: 1em auto;
-  background: #8E4DE3;
+  font-size: 15px;
+  font-weight: bold;
+  background: #FFD000;
   border-radius: 10px;
-  color: white;
-  margin-top: 8%;
+  color: black;
+  margin-top: 5%;
+  margin-left: 65%;
 }

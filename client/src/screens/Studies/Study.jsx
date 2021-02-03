@@ -24,7 +24,7 @@ export default function Studies(props) {
           </div>
       </div>
       {currentUser &&
-        <Link to="/studies/new" className="add-btn"><button>Add Study</button></Link>  
+        <Link to="/studies/new"><button className="add-btn">Add Study</button></Link>  
       }
       </div>
     
