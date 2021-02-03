@@ -41,9 +41,6 @@ https://xd.adobe.com/view/f60e229f-378a-4184-af19-87b70e57e3bd-a35d/
 
 - Mobile Wireframes
 
-https://xd.adobe.com/view/a38d8eb6-4d06-40e1-9917-0ef3cd68fadc-f6de/
-
-- Ipad Wireframes
 
 #### Component Tree
 
