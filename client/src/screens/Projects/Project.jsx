@@ -4,25 +4,27 @@ import ProjectCard from '../../components/ProjectCard';
 import './Project.css';
 
 export default function Projects(props) {
-  const { projects } = props;
+  const { projects, currentUser } = props;
   return (
     <div>
-      <div className="card-list">
+        <p className="project-plans">Projects</p>
+        <div className="projectcard-container">
+      <div className="pr-card-list">
         {projects.map(project => (
           <React.Fragment key={project.id}>
             <Link to={`/projects/${project.id}`}>
               <ProjectCard
                 name={project.name}
                 image={project.img_url}
-                description={project.description}
-                deployed={project.deployed_url}
-                stack={project.stack}
               />
             </Link>
           </React.Fragment>
         ))}
+            </div>
       </div>
-      <Link to="/projects/new"><button>Add Project</button></Link>
+      {currentUser && 
+        <Link to="/projects/new"><button button className="pr-add-btn">Add Project</button></Link>
+      }
     </div>
   )
 }

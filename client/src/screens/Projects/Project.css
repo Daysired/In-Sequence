@@ -1,15 +1,53 @@
-.project-card > img {
-  border: 1px solid black;
-  /* border-radius: 50%; */
-  max-width: 150px;
-  width: 100%;
+.project-plans {
+  color: #FFD000;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 7%;
 }
 
-.card-list {
+.project-card > img {
+  max-width: 120px;
+  width: 100%;
+  height: 90px;
+  margin-left: 2%;
+  margin-top: 10%;
+}
+
+.pr-card-list {
   display: grid;
   grid-gap: 30px;
   grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
-  margin: 60px;
-  color: white;
+  margin-left: 6%;
+}
 
+.project-card {
+  height: 25vh;
+  width: 15vw;
+  margin-top: 12%;
+  background: #8E4DE3;
+  color: white; 
+  border-radius: 15px;
+  margin-top: 15%;
+  border: 5px solid #FFD000;
+}
+
+.name {
+  color: black;
+  text-align: center;
+  font-size: 23px;
+  margin-top: 13px;
+  font-weight: bold;
+}
+
+.pr-add-btn {
+  width: 9%;
+  height: 35px;
+  margin: 1em auto;
+  font-size: 15px;
+  font-weight: bold;
+  background: #FFD000;
+  border-radius: 10px;
+  color: black;
+  margin-top: 8%;
+  margin-left: 78%;
 }

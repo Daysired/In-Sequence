@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Switch, Route, useHistory } from "react-router-dom";
+import { Switch, Route, useHistory, Redirect } from "react-router-dom";
 import ProjectCreate from "../screens/Projects/ProjectCreate";
 import ProjectEdit from "../screens/Projects/ProjectEdit";
 import ProjectDetail from "../screens/Projects/ProjectDetail";
@@ -48,16 +48,18 @@ export default function ProjectContainer(props) {
         />
       </Route>
       <Route path='/projects/:id/edit'>
-        <ProjectEdit
+        {currentUser ? <ProjectEdit
+          currentUser={currentUser}
           projects={projects}
           handleUpdate={handleUpdate}
-        />
+        /> : <Redirect to="/login" />}
       </Route>
       <Route path='/projects/:id'>
-        <ProjectDetail
-         projects={projects}
-         handleDelete={handleDelete}
-        />
+        {currentUser ? <ProjectDetail
+          currentUser={currentUser}
+          projects={projects}
+          handleDelete={handleDelete}
+        /> : <Redirect to="/login" />}
       </Route>
       <Route path='/projects'>
         <Project
