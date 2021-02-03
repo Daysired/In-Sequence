@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import Layout from '../../layouts/Layout';
 import './ProjectEdit.css';
 
 export default function ProjectEdit(props) {
@@ -39,13 +38,12 @@ export default function ProjectEdit(props) {
   }
 
   return (
-    <Layout>
-      <div className="form-container">
+      <div className="pr-edit-container">
         <form onSubmit={(e) => {
           e.preventDefault()
           handleUpdate(id, formData);
         }}>
-          <h3>Edit Study</h3>
+          <h3 className="pr-edit-h3">Edit Project</h3>
           <label>Name:
             <input
               type="text"
@@ -89,6 +87,5 @@ export default function ProjectEdit(props) {
           <button>Submit</button>
         </form>
       </div>
-    </Layout>
   )
 }
