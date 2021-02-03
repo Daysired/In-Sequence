@@ -17,11 +17,11 @@ export default function Home() {
           <img src='https://i.imgur.com/aKQyzwC.png' />
           <p className="pr">Projects</p>
         </Link>
-        <Link className="nt-container" to='/network'>
+        <Link className="nt-container">
           <img src='https://i.imgur.com/6y1DsPB.png' />
           <p className="nt">Network</p>
         </Link>
-        <Link className="js-container" to='/job-search'>
+        <Link className="js-container">
           <img src='https://i.imgur.com/qpx4aBj.png' />
           <p className="js">Job Search</p>
         </Link>
