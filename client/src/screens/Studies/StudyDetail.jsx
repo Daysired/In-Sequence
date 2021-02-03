@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom'
 import './StudyDetail.css';
 
-// import Layout from '../../layouts/Layout';
-
 export default function StudyDetail(props) {
   const [study, setStudy] = useState(null);
   const { studies, handleDelete, currentUser } = props;
@@ -17,7 +15,6 @@ export default function StudyDetail(props) {
   }, [studies, id])
 
   return (
-    // <Layout>
       <div className="study-details">
         {
           study &&

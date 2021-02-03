@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Layout from '../../layouts/Layout';
 import './StudyCreate.css';
 
 export default function StudyCreate(props) {
@@ -21,7 +20,6 @@ export default function StudyCreate(props) {
   }
 
   return (
-    <Layout currentUser={props.currentUser}>
       <div className="form-container">
         <form onSubmit={(e) => {
           e.preventDefault()
@@ -63,6 +61,5 @@ export default function StudyCreate(props) {
           <button>Submit</button>
         </form>
       </div>
-    </Layout>
   )
 }

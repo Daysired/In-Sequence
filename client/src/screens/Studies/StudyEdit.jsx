@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import Layout from '../../layouts/Layout';
 import './StudyEdit.css';
 
 export default function StudyEdit(props) {
@@ -38,7 +37,6 @@ export default function StudyEdit(props) {
   }
 
   return (
-    <Layout>
       <div className="form-container">
         <form onSubmit={(e) => {
           e.preventDefault()
@@ -80,6 +78,5 @@ export default function StudyEdit(props) {
           <button>Submit</button>
         </form>
       </div>
-    </Layout>
   )
 }

@@ -5,7 +5,7 @@ export default function StudyCard(props) {
   return (
       <div className="study-card">
       <img src={image} alt={title} />
-      <h4 className="topic">{title}</h4>
+      <p className="topic">{title}</p>
         <p>{description}</p>
         <p>{documentation}</p>
         

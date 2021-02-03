@@ -8,6 +8,7 @@ export default function Studies(props) {
   const { studies, currentUser } = props;
   return (
     <div className="background-p">
+      <p className="study-plans">Study Plans</p>
       <div className="studycard-container">
       <div className="card-list">
         {studies.map(study => (
@@ -23,7 +24,7 @@ export default function Studies(props) {
           </div>
       </div>
       {currentUser &&
-        <Link to="/studies/new"><button>Add Study</button></Link>  
+        <Link to="/studies/new" className="add-btn"><button>Add Study</button></Link>  
       }
       </div>
     
