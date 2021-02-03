@@ -1,25 +1,13 @@
-.signin-link {
-  color: white;
-  align-self: right;
-  padding-top: 0;
-  margin: 0;
+.layout {
+  display: flex;
+  flex-direction: column;
 }
 
-.studies-link {
-  color: white;
-}
-
-.projects-link {
-  color: white;
-}
-
-.signout-link{
-  color: white;
-}
-
-.user-greeting {
-  color: white;
-  padding-top: 0;
-  margin: 0;
+@media (max-width: 500px) {
+  .layout-children {
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+  }
 }
  
