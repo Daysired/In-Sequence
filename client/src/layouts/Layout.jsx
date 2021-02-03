@@ -1,5 +1,4 @@
 import React from 'react';
-import "./Layout.css"
 import Nav from "../components/Nav"
 
 export default function Layout(props) {

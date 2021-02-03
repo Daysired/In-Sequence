@@ -10,7 +10,7 @@ Project.destroy_all
 Study.destroy_all
 User.destroy_all
 
-@daisy = User.create!(username: 'daisy', email: 'daisy@email.com', password: '331280')
+@daisy = User.create!(username: 'Daisy', email: 'daisy@email.com', password: '331280')
 
 puts "#{User.count} users created"
 

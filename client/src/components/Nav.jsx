@@ -8,28 +8,28 @@ export default function Nav(props) {
 
   const alwaysOptions = (
     <>
-      <NavLink className="link" to="/studies">
+      <Link className="study-link" to="/studies">
         Study
-    </NavLink>
-      <NavLink className="link" to="/projects">
+    </Link>
+      <Link className="project-link" to="/projects">
         Projects
-    </NavLink>
+    </Link>
     </>
   );
 
     return (
       <nav className="nav">
         <NavLink className="site-logo" to="/">
-          In Sequence
+          <img src='https://i.imgur.com/ziS6dc4.png'/>
       </NavLink>
-      <div> 
+        <div className="welcome-signout"> 
         {currentUser ? (
           <>
             <p className="link-welcome">Welcome, {currentUser.username}</p>
-            <Link className="signout-link"onClick={handleLogout}>Sign Out</Link>
+            <Link className="signout-link"onClick={handleLogout}>SignOut</Link>
           </>
         ) : (
-            <Link className="signin-link" to='/login'>Sign In/Sign Up</Link> 
+            <Link className="signin-link" to='/login'>SignIn</Link> 
             )}
           {alwaysOptions}
         </div> 
