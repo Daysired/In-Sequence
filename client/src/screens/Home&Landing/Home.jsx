@@ -6,8 +6,10 @@ import React from 'react'
 export default function Home() {
   return (
     <div>
+      <div className="home-headings">
       <p className="h1">Get Organized.</p>
       <p className="h2">Stay Organized.</p>
+      </div>
       <div className="home-containers">
         <Link className="st-container" to='/studies'>
           <img src='https://i.imgur.com/QtFuZbl.png' />

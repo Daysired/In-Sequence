@@ -97,3 +97,60 @@ img {
   border-radius: 15px;
   border: 5px solid white;
 }
+
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .st-container {
+    height: 28vh;
+    width: 36vw;
+    margin-left: 2%;
+  }
+  
+  .pr-container {
+    height: 28vh;
+    width: 36vw;;
+    margin-left: 1%;
+  }
+  
+  .nt-container {
+    height: 28vh;
+    width: 36vw;
+    margin-left: 2%;
+  }
+  
+  .js-container {
+    height: 28vh;
+    width: 36vw;
+    margin-left: 1%;
+  }
+  
+  .home-containers{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(104px, 1fr));
+    margin-top: 10%;
+  }
+  
+  img {
+    width: 100%;
+    margin-left: 2px;
+    margin-top: 10%;
+    margin-bottom: 0;
+  }
+
+  .home-headings {
+    margin-left: 5%;
+  }
+
+  .h1 {
+    margin-top: 10%;
+    font-size: 22px;
+  }
+  
+  .h2 {
+    font-size: 22px;
+  }
+
+}
+
