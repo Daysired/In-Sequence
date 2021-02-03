@@ -1,11 +1,12 @@
 .detail-card {
-  height: 63vh;
-  width: 35vw;
+  height: 60vh;
+  width: 27vw;
   margin-left: 35%;
   background: #8E4DE3;
   color: white; 
   border-radius: 15px;
-  margin-top: 10%;
+  margin-top: 8%;
+  border: 5px solid#FFD000;
 }
 
 .detail-img {

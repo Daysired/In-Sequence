@@ -65,6 +65,7 @@ img {
   background: #8E4DE3;
   color: white; 
   border-radius: 15px;
+  border: 5px solid white;
 }
 
 .pr-container {
@@ -74,6 +75,7 @@ img {
   background: #8E4DE3;
   color: white; 
   border-radius: 15px;
+  border: 5px solid white;
 }
 
 .nt-container {
@@ -83,6 +85,7 @@ img {
   background: #8E4DE3;
   color: white; 
   border-radius: 15px;
+  border: 5px solid white;
 }
 
 .js-container {
@@ -92,4 +95,5 @@ img {
   background: #8E4DE3;
   color: white; 
   border-radius: 15px;
+  border: 5px solid white;
 }
