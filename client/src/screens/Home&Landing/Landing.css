@@ -17,6 +17,7 @@
 
 body {
   background-color: black;
+  text-align: center;
 }
 
 
@@ -24,7 +25,7 @@ body {
   color: white;
   font-size: 26px;
   text-align: center;
-  margin-bottom: 0;
+  margin-bottom: 15px;
 
 }
 
@@ -32,13 +33,13 @@ body {
   color: #8E4DE3 ;
   text-emphasis: bold;
   font-size: 50px;
-  align-self: center;
-  margin-top: 10px;
+  text-align: center;
   background: none;
 
 }
 
 span{
+  margin-left: 36%;
   text-align: center;
   font-size: 30px;
 }
@@ -61,18 +62,24 @@ li {
   margin-bottom: 45px;
   display: block;
   font-size: 30px;
+  margin-left: 0;
 }
 
-.yellow{
+.yellow {
   color: #FFD000;
+  font-weight: none;
 }
 
-.blue{
+.blue {
   color: #00FFE3;
 }
 
-.purple{
+.purple {
   color: #8E4DE3;
+}
+
+.white {
+  color: #00FFE3;
 }
 
 .flip2 { animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }

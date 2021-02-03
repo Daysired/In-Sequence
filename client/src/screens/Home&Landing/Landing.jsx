@@ -9,7 +9,7 @@ export default function Landing() {
         <p className="heading">The Ultimate Developer Tool.</p>
         <p className="heading2">Plan Better. Stay Organized.</p>
       <div className="carousel-container">
-        <h4 className="wordCarousel">
+        <p className="wordCarousel">
         <span>In Sequence:</span>
         <div className="animation-div">
           <ul className="flip4">
@@ -19,7 +19,7 @@ export default function Landing() {
             <li className="white">Job Search</li>
             </ul>
             </div>
-            </h4>
+            </p>
         </div>
         <p className="get-organized">Get Organized</p>
         <Link className="arrow" to="/home">>>></Link>
