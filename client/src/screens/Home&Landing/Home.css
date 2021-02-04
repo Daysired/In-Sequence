@@ -99,37 +99,119 @@ img {
 }
 
 
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (max-device-width: 280px) {
+  .st {
+    font-size: 12px;
+  }
+  
+  .pr {
+    font-size: 12px;
+  }
+  
+  .nt {
+    font-size: 12px;
+  }
+  
+  .js {
+    font-size: 12px;
+  }
+  
   .st-container {
-    height: 28vh;
+    height: 18vh;
     width: 36vw;
-    margin-left: 2%;
+    margin-top: 8%;
+    margin-left: 12%;
   }
   
   .pr-container {
-    height: 28vh;
-    width: 36vw;;
-    margin-left: 1%;
+    height: 18vh;
+    width: 36vw;
+    margin-top: 8%;
+    margin-left: 12%;
   }
   
   .nt-container {
-    height: 28vh;
+    height: 18vh;
     width: 36vw;
-    margin-left: 2%;
+    margin-top: 8%;
+    margin-left: 12%;
   }
   
   .js-container {
-    height: 28vh;
+    height: 18vh;
     width: 36vw;
-    margin-left: 1%;
+    margin-top: 8%;
+    margin-left: 12%;
   }
   
   .home-containers{
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 1px;
     grid-template-columns: repeat(auto-fit, minmax(104px, 1fr));
+    margin: 0;
+  }
+
+  .h1 {
     margin-top: 10%;
+    font-size: 15px;
+  }
+  
+  .h2 {
+    font-size: 15px;
+  }
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .st {
+    font-size: 12px;
+  }
+  
+  .pr {
+    font-size: 12px;
+  }
+  
+  .nt {
+    font-size: 12px;
+  }
+  
+  .js {
+    font-size: 12px;
+  }
+  
+  .st-container {
+    height: 18vh;
+    width: 26vw;
+    margin-top: 8%;
+    margin-left: 12%;
+  }
+  
+  .pr-container {
+    height: 18vh;
+    width: 26vw;
+    margin-top: 8%;
+    margin-left: 12%;
+  }
+  
+  .nt-container {
+    height: 18vh;
+    width: 26vw;
+    margin-top: 8%;
+    margin-left: 12%;
+  }
+  
+  .js-container {
+    height: 18vh;
+    width: 26vw;
+    margin-top: 8%;
+    margin-left: 12%;
+  }
+  
+  .home-containers{
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
+    margin: 0;
   }
   
   img {
@@ -140,17 +222,17 @@ img {
   }
 
   .home-headings {
-    margin-left: 5%;
+    margin-right: 45%;
+    margin-bottom: 0;
   }
 
   .h1 {
     margin-top: 10%;
-    font-size: 22px;
+    font-size: 15px;
   }
   
   .h2 {
-    font-size: 22px;
+    font-size: 15px;
   }
 
 }
-
